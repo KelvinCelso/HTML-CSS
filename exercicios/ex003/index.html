@@ -1,0 +1,37 @@
+~<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(150, 30, 30);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir esse site em dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png"  type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-M.png" type="image/png">
+        <img src="imagens/foto-G.png" alt="Imagem flexivel">
+    </picture>
+    <h1>reproduzindo audio</h1>
+    <p>reproduzir audio em html 5</p>
+    
+    <audio src="midia/floating home.mp3" controls autoplay></audio>
+    <h1>reproduzindo videos por hospedagem interna</h1>
+    <video  width="300" height="500" controls>
+        <source src="midia/Meu-Video.Mp4-1.m4v" type="video/m4v">
+        <source src="meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.Mp4-1.webm" type="video/webm">
+        <p>seu navegador nao tem compatibilidade com reproducao de video</p>
+    </video>
+    <h1>Inserindo video do youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</body>
+</html>
