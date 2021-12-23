@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@font-face {
+    font-family:"passion bold" ;
+    src: url(fontes/PassionOne-Bold.ttf) format("truetype");
+}
+@font-face{
+    font-family: "passion normal";
+    src: url(fontes/PassionOne-Regular.ttf) format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+:root{
+    --fonte-bold:"passion bold",Helvetica, sans-serif;
+    --fonte-texto:'passion One', cursive;
+    --font-normal:"passion normal",cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    background-color: black;
+    min-height: 230px;
+    width: 100%;
+    font-family: var(--fonte-bold);
+}
+header h1{
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    padding-top: 60px;
+    
+}
+header p{
+    color: white;
+    font-family: var(--font-normal);
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+   
+}
+body{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-repeat:repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+/*section*/
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-texto);
+    font-weight: bold;
+    font-size: 3.7vw;
+}
+.normal{
+    background-color: white;
+}
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    padding: 5px;
+
+}
