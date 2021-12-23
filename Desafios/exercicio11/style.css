@@ -41,12 +41,8 @@ header p{
     text-decoration: none;
    
 }
-body{
-    background-image: url(imagens/background001.jpg);
-    background-position: center center;
-    background-repeat:repeat;
-    background-size: cover;
-    background-attachment: fixed;
+html,body{
+    background-color: lightgray;
     min-height: 100vh;
 }
 /*section*/
@@ -59,12 +55,28 @@ section{
     font-weight: bold;
     font-size: 3.7vw;
 }
+section p{
+    padding-bottom: 2em;
+}
 .normal{
     background-color: white;
 }
+.imagem{
+    color: white;
+    box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.349);
+    background-attachment: fixed;
+    
+}
 .imagem p{
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.26);
     display: inline-block;
     padding: 5px;
-
+    text-shadow: 1px 1px 2px black;
+}
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+#img02{
+    background-image: url(imagens/background002.jpg);
 }
